@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="AbstractUtilities\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserAutomation.Shared\UserAutomation.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

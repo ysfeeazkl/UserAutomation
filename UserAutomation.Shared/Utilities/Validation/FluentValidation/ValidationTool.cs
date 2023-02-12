@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using UserOtomation.Shared.Entities.Concrete;
+﻿using UserOtomation.Shared.Entities.Concrete;
 using UserOtomation.Shared.Utilities.Exceptions;
 using FluentValidation;
 

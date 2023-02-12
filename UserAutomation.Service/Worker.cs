@@ -1,3 +1,5 @@
+using System;
+
 namespace UserAutomation.Service
 {
     public class Worker : BackgroundService
@@ -11,11 +13,23 @@ namespace UserAutomation.Service
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            Console.WriteLine("Welcome to Yusuf Efe's Otomations");
+
+            string url = "https://localhost:7264/api/CompanyControllers/GetById";
+            //string url = "https://localhost:7264/WeatherForecast";
+
+
+            using (HttpClient client = new HttpClient())
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                string response = await client.GetStringAsync(url);
+                Console.WriteLine(response);
+                //if (response.IsSuccessStatusCode)
+                //{
+                //    Console.WriteLine(response.Content);
+                //}
             }
+
+            Console.ReadKey();
         }
     }
 }
