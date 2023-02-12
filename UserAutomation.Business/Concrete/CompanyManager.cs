@@ -10,6 +10,11 @@ namespace UserAutomation.Business.Concrete
 {
     public class CompanyManager : ICompanyService
     {
+        public CompanyManager()
+        {
+
+        }
+
         public Task<IDataResult> AddAsync()
         {
             throw new NotImplementedException();

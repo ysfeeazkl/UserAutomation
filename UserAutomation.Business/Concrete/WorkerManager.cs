@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserAutomation.Business.Abstract;
+using UserAutomation.Dapper.Repository;
+using UserAutomation.Entities.Concrete;
 using UserOtomation.Shared.Utilities.Results.Abstract;
 
 namespace UserAutomation.Business.Concrete
 {
     public class WorkerManager : IWorkerService
     {
+        private readonly IDapperRepository<Worker> _workerRepository;
+
+        public WorkerManager(IDapperRepository<Worker> workerRepository)
+        {
+            _workerRepository = workerRepository;
+        }
         public Task<IDataResult> AddAsync()
         {
             throw new NotImplementedException();

@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserOtomation.Shared.Entities.Abstrack;
 
 namespace UserAutomation.Entities.Concrete
 {
-    public class Location
+    public class Location : EntityBase<int>, IEntity
     {
+        public int Id { get; set; }
+
         public string Country { get; set; }
         public string Province { get; set; }
         public Company? Company { get; set; }
