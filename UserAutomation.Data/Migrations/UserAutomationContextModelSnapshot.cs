@@ -11,7 +11,7 @@ using UserAutomation.Data.Concrete.Context;
 namespace UserAutomation.Data.Migrations
 {
     [DbContext(typeof(UserAutomationContext))]
-    partial class UserOtomationContextModelSnapshot : ModelSnapshot
+    partial class UserAutomationContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

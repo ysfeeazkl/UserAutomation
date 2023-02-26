@@ -10,8 +10,6 @@ namespace UserAutomation.Entities.Concrete
 {
     public class Location : EntityBase<int>, IEntity
     {
-        public int Id { get; set; }
-
         public string Country { get; set; }
         public string Province { get; set; }
         public Company? Company { get; set; }

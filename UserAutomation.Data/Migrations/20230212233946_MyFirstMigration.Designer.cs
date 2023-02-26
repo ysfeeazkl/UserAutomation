@@ -12,7 +12,7 @@ using UserAutomation.Data.Concrete.Context;
 namespace UserAutomation.Data.Migrations
 {
     [DbContext(typeof(UserAutomationContext))]
-    [Migration("20230212195945_MyFirstMigration")]
+    [Migration("20230212233946_MyFirstMigration")]
     partial class MyFirstMigration
     {
         /// <inheritdoc />

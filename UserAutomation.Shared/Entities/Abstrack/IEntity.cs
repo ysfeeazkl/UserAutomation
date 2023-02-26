@@ -8,6 +8,5 @@ namespace UserOtomation.Shared.Entities.Abstrack
 {
     public interface IEntity
     {
-        int Id { get; }
     }
 }
